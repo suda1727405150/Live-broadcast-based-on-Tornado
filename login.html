@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>login</title>
+    <link href="login.css" type="text/css" rel="stylesheet" />
+    <script type="text/javascript" src="login.js"></script>
+</head>
+
+<body onLoad='onLoad();' id="begin">
+    <div class="wrap" id="wrap">
+        <div class="logGet">
+            <!-- 头部提示信息 -->
+            <div class="logD logDtip">
+                <p class="p1">登录</p>
+            </div>
+            <!-- 输入框 -->
+            <div class="lgD">
+                <img src="img/login/logName.png" width="20" height="20" alt="" />
+                <input type="text" placeholder="输入用户名" id="user_name" />
+            </div>
+            <div class="lgD">
+                <img src="img/login/logPwd.png" width="20" height="20" alt="" />
+                <input type="text" placeholder="输入用户密码" id="password" />
+            </div>
+            <div class="lgD">
+
+                <p>
+                    还未注册，点击<a style="color: #1708e7;" onclick="window.location.href='register.html';" 
+                    target="_back">注册账号</a>
+                </p>
+
+            </div>
+            <div class="logC">
+                <a target="_self"><button onclick="sendMsg();">登 录</button></a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

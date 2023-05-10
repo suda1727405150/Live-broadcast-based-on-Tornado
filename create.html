@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>注册页面</title>
+    <link href="create.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body id="i88" style="margin: 0" onLoad='onLoad();'>
+    <div class="pg_header">
+        <a class="logo">创建房间</a>
+        <a class="pg_dl" id="i77">加入房间</a>
+    </div>
+    <form name="tijiao" method="post" onsubmit="return check()" action="winford.top">
+        <div class="left"></div>
+        <div class="pg_body">
+            <div class="menu">房间号:</div>
+            <div class="kong">
+                <input id="text1" type="text" name="01" onblur="check()" disabled="disabled">
+            </div>
+            <div class="menu">您的名称:</div>
+            <div class="kong">
+                <input id="user_name" type="text" name="010" onblur="check()">
+                <span id="user_nameid" class="tian" style="margin-top: 4px"></span>
+            </div>
+            <div class="menu">是否设置密码:</div>
+            <div class="kong" style="width:200px;">
+                是<input type="radio" name="gender" id="yes" checked="true" onclick="show_password();"> 否
+                <input type="radio" name="gender" id="no" onclick="clear_password();">
+
+
+            </div>
+
+            <div id="my_password">
+                <div class="menu">密码:</div>
+                <div class="kong">
+                    <input id="text2" type="password" name="02" onblur="check()">
+                    <span id="div2" class="tian" style="margin-top: 4px"></span>
+                </div>
+                <div class="menu">确认密码:</div>
+                <div class="kong">
+                    <input id="text3" type="password" name="01" onblur="check()">
+                    <span id="div3" class="tian" style="margin-top: 4px"></span>
+                </div>
+            </div>
+
+            <div class="menu">入会选项</div>
+            <div class="kong" style="width:200px;">
+                开启麦克风
+                <input type="checkbox" name="vehicle" id="my_sound" checked="true">
+                <br> 
+                开启摄像头
+                <input type="checkbox" name="vehicle" id="my_camera">
+            </div>
+            <div class="menu">管理</div>
+            <div class="kong" style="width:200px;">
+                全员关闭麦克风<input type="checkbox" name="vehicle" id="sound">
+                <br> 全员关闭摄像头
+                <input type="checkbox" name="vehicle" id="camera">
+            </div>
+
+        </div>
+        </div>
+        <div class="can">
+            <input id="i111" type="button" name="002" value="创  建" onclick="sendMsg();">
+
+
+        </div>
+    </form>
+    <script type="text/javascript" src="qwebchannel.js"></script>
+    <script type="text/javascript" src="create.js"></script>
+</body>
+
+</html>

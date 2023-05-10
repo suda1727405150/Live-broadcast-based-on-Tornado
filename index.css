@@ -1,0 +1,39 @@
+﻿ul {
+    margin: 0;
+    padding: 0;
+}
+
+#my_div {
+    position: relative;
+    list-style: none;
+    width: 150px;
+    height: 100px;
+    display: block;
+    float: left;
+}
+
+#my_div li {
+    width: 30px;
+    height: 25px;
+    line-height: 30px;
+    display: inline-block;
+}
+
+#my_div li:hover {
+    background: #efefef;
+    cursor: pointer;
+}
+
+#container {
+    position: relative;
+    list-style: none;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    float: left;
+}
+
+#imageView {
+    border: 1px solid #000;
+}

@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>注册页面</title>
+    <link href="join.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body id="i88" style="margin: 0" onLoad='onLoad();'>
+    <div class="pg_header">
+        <a class="pg_dl" id="i77">创建房间</a>
+        <a class="logo">加入房间</a>
+
+
+    </div>
+    <form name="tijiao" method="post" onsubmit="return check()" action="winford.top">
+        <div class="left"></div>
+        <div class="pg_body">
+            <div class="menu">房间号:</div>
+            <div class="kong">
+                <input id="text1" type="text" name="01">
+                <span id="div1" class="tian" style="margin-top: 4px"></span>
+            </div>
+            <div class="menu">您的名称:</div>
+            <div class="kong">
+                <input id="user_name" type="text" name="010" onblur="check()">
+                <span id="user_nameid" class="tian" style="margin-top: 4px"></span>
+            </div>
+
+
+            <div id="my_password" style="display:none">
+                <div class="menu">密码:</div>
+                <div class="kong">
+                    <input id="text2" type="password" name="02" onblur="check()">
+                    <span id="div2" class="tian" style="margin-top: 4px"></span>
+                </div>
+
+            </div>
+            <div class="menu">入会选项</div>
+            <div class="kong" style="width:200px;">
+                开启麦克风<input type="checkbox" name="vehicle" id="sound" checked="true">
+                <br> 开启摄像头
+                <input type="checkbox" name="vehicle" id="camera" checked="true">
+            </div>
+        </div>
+        </div>
+        <div class="can">
+            <input id="i111" type="button" name="002" value="加  入" onclick="sendMsg();">
+
+
+        </div>
+    </form>
+    <script type="text/javascript" src="qwebchannel.js"></script>
+    <script type="text/javascript" src="join.js"></script>
+</body>
+
+</html>

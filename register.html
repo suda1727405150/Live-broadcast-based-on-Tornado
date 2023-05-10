@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>注册页面</title>
+    <link href="register.css" type="text/css" rel="stylesheet" />
+</head>
+
+<body id="i88" style="margin: 0" onLoad='onLoad();'>
+    <div class="pg_header">
+        <a class="logo">Register</a>
+        <a class="pg_dl" id="i77">重置</a>
+    </div>
+    <form name="tijiao" method="post" onsubmit="return check()" action="winford.top">
+        <div class="left"></div>
+        <div class="pg_body">
+            <div class="menu">用户名:</div>
+            <div class="kong">
+                <input id="text1" type="text" name="01" placeholder="请输入用户名" onblur="check()"><span id="div1" class="tian" style="margin-top: 4px">*(为必填)</span>
+            </div>
+            <div class="menu">真实姓名:</div>
+            <div class="kong">
+                <input id="i2" type="text" name="01">
+            </div>
+            <div class="menu">性别:</div>
+            <div class="kong" style="width:200px;">
+                男<input type="radio" name="gender" value="1" checked='true'> 女 <input type="radio" name="gender" value="2">
+            </div>
+            <div class="menu">密码:</div>
+            <div class="kong">
+                <input id="text2" type="password" name="02" onblur="check()">
+                <span id="div2" class="tian" style="margin-top: 4px">*(为必填)</span>
+            </div>
+            <div class="menu">确认密码:</div>
+            <div class="kong">
+                <input id="text3" type="password" name="01" onblur="check()">
+                <span id="div3" class="tian" style="margin-top: 4px">*(为必填)</span>
+            </div>
+            <div class="menu">电话号码:</div>
+            <div class="kong">
+                <input id="i5" type="text" name="01">
+            </div>
+            <div class="menu">邮箱地址:</div>
+            <div class="kong">
+                <input id="text4" type="text" name="01" onblur="check()">
+                <span id="div4" class="tian" style="margin-top: 4px">*(为必填)</span>
+            </div>
+            <div class="menu">头像上传: </div>
+            <div class="kong">
+                <input type="file" name="file" value="选择头像" accept="image/*">
+            </div>
+            <div class="menu">个人签名:</div>
+            <div class="kong">
+                <textarea name="meno" style="width: 280px;height: 40px;">有点懒……
+                    </textarea>
+            </div>
+        </div>
+        <div class="can">
+            <input id="i111" type="button" name="002" value="注  册" onclick="sendMsg();">
+            <p style="width: 200px;display: inline-block;"></p>
+            <input id="i222" type="button" name="004" value="取  消">
+
+        </div>
+    </form>
+    <script type="text/javascript" src="register.js"></script>
+</body>
+
+</html>
