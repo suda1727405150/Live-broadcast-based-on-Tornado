@@ -9,11 +9,11 @@ var my_line = 'solid';
 var my_photo = 'rec';
 var pen = true;
 var colors = new Array("#000000", "#ffffff", "#ff0000", "#00ff00", "#0000ff");
-var photo = new Array("photo/rec.png", "photo/circle.png", "photo/line.png");
+var photo = new Array("img/rec.png", "img/circle.png", "img/line.png");
 var photo_rec = new Array("rec", "circle", "line")
-var line_file = new Array("photo/solid.png", "photo/dotted.png");
+var line_file = new Array("img/solid.png", "img/dotted.png");
 var line_ret = new Array('solid', 'dotted');
-var width_file = new Array("photo/width1.png", "photo/width3.png", "photo/width5.png", "photo/width7.png");
+var width_file = new Array("img/width1.png", "img/width3.png", "img/width5.png", "img/width7.png");
 var width_ret = new Array(1, 3, 5, 7);
 /**
  * called on window load.
@@ -33,9 +33,9 @@ function init() {
      * find the canvas element.
      */
     //imageView.onmouseover=function(){
-    // this.style.cursor='url(photo/mouse.png),auto';
+    // this.style.cursor='url(img/mouse.png),auto';
     //} 
-    imageView.style.cursor = 'url(photo/mouse1.png),auto';
+    imageView.style.cursor = 'url(img/mouse1.png),auto';
     canvas = document.getElementById('imageView');
     if (!canvas) { //没有得到返回null
         return;
@@ -121,7 +121,7 @@ function tool_pencil() {
      */
     this.mousemove = function(ev) { //点击且移动
         if (clear != true) {
-            imageView.style.cursor = 'url(photo/mouse1.png),auto';
+            imageView.style.cursor = 'url(img/mouse1.png),auto';
         }
         if (this.started) {
             if (pen) {
@@ -253,7 +253,7 @@ function show_pen() {
             } else {
                 context.setLineDash([]);
             }
-            document.getElementById('solid').style.background = 'url(photo/' + my_line + '.png)';
+            document.getElementById('solid').style.background = 'url(img/' + my_line + '.png)';
         }
         my_div.appendChild(li);
     }
@@ -272,7 +272,7 @@ function show_width(id) //后面还要搞一个粗细的全局变量
         li.appendChild(img);
         li.onclick = function(e) {
             my_width = e.target.id;
-            document.getElementById('width').style.background = 'url(photo/width' + my_width + '.png)';
+            document.getElementById('width').style.background = 'url(img/width' + my_width + '.png)';
         }
         my_div.appendChild(li);
     }
@@ -282,7 +282,7 @@ function myclear() {
     delete_div();
     clear = true;
     pen = true;
-    imageView.style.cursor = 'url(photo/mouse2.png),auto';
+    imageView.style.cursor = 'url(img/mouse2.png),auto';
 }
 
 function show_rec() {
@@ -299,7 +299,7 @@ function show_rec() {
             pen = false;
             my_photo = e.target.id;
             //alert(my_photo);			
-            document.getElementById('rec').style.background = 'url(photo/' + my_photo + '.png)';
+            document.getElementById('rec').style.background = 'url(img/' + my_photo + '.png)';
         }
         my_div.appendChild(li);
     }
