@@ -2,7 +2,7 @@
     <head>
         <meta charset="UTF-8">
         <title>白板演示</title>
-		<link href="index.css" type="text/css" rel="stylesheet" />
+		<link href="./css/index.css" type="text/css" rel="stylesheet" />
   </head>
   <body>
     <div id="container">
@@ -11,23 +11,23 @@
 	  <br>
 
 		<input type="button" onclick="show_color(this.id);" id="showcolor" style="background-color:#000000; color:#000000; width:30px; height:30px"/>
-		<input type="button" onclick="my_pen();" id='pen' style="background:url(photo/pen.png);width:30px;height:30px"> 
+		<input type="button" onclick="my_pen();" id='pen' style="background:url(img/pen.png);width:30px;height:30px"> 
 
-		<input type="button" onclick="show_pen();" id='solid' style="background:url(photo/solid.png);width:30px;height:30px"> 
+		<input type="button" onclick="show_pen();" id='solid' style="background:url(img/solid.png);width:30px;height:30px"> 
 		
-		<input type="button" onclick="show_width();" id='width' style="background:url(photo/width1.png);width:30px;height:30px"> 
+		<input type="button" onclick="show_width();" id='width' style="background:url(img/width1.png);width:30px;height:30px"> 
 
-	   <input type="button" onclick="show_rec();" id='rec' style="background:url(photo/rec.png);width:30px;height:30px"> 
+	   <input type="button" onclick="show_rec();" id='rec' style="background:url(img/rec.png);width:30px;height:30px"> 
 	   
-	     <input type="button" onclick="myclear();" style="background:url(photo/clear.png);width:30px;height:30px"> 
+	     <input type="button" onclick="myclear();" style="background:url(img/clear.png);width:30px;height:30px"> 
 		 <button type="button" style="width:890px; height:30px;visibility: hidden; "></button>
 		 <button type="button" style=" font-size: 15px; background-color:#ffffff; color: #e91717; border-color: #e91717; width:100px; height:40px" id="screen2" onclick="do_close();">结束演示</button><br>
 		 <!-- <br> -->
 	<div>
 	<ul id='my_div'>
-<!-- 	<li><img src='1.png'></li> -->
+<!-- 	<li><img src='./img/1.png'></li> -->
 	</ul>
 	</div></div>
-    <script type="text/javascript" src="index.js"></script>
+    <script type="text/javascript" src="./js/index.js"></script>
   </body>
 </html>
